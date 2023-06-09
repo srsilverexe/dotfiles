@@ -1,0 +1,42 @@
+@import "purgatory.css";
+
+* {
+    font-family: JetBrainsMono Nerd Font Mono;
+    font-size: 13px;
+}
+
+window#waybar {
+	background: rgba(0, 0, 0, 0);   
+}
+
+#workspaces button {
+	color: @text;
+	min-width: 0;
+	padding: 0;
+	padding-right: 10;
+	padding-left: 10;
+}
+
+#workspaces button.focused {
+	border-bottom: 2px solid @witch;
+	border-radius: 0px;
+}
+
+.modules-left {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.modules-right, #clock {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.modules-left, .modules-right, .modules_center, #clock {
+	background: @base;
+	color: @text;
+	border: 3px solid @mantle;
+	border-radius: 6;
+	padding-top: 0;
+	padding-bottom: 0;
+}
